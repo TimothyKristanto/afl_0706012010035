@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.simple-card-img {
+    font-size: 80px;
+}
+
+form {
+    animation: fade-in 1.5s;
+}
+
+.forms {
+    position: relative;
+    z-index: 1;
+    color: white !important;
+}
+
+.line-break {
+    width: 100%;
+}
+
+.title {
+    position: relative;
+    z-index: 1;
+    animation: fade-in 1.5s;
+}
+
+.create-data {
+    font-size: 15px;
+}
+
+.card {
+    color: white !important;
+    animation: fade-in 1.5s;
+}
+
+.champs-card {
+    height: 250px !important;
+    justify-content: center !important;
+}
+
+.content {
+    margin-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.card-img-1 {
+    position: absolute;
+    font-size: 60px;
+    top: 100px;
+    right: 100px;
+    transform: rotate(30deg);
+}
+
+.card-img-2 {
+    position: absolute;
+    font-size: 80px;
+    top: 300px;
+    left: 100px;
+}
+
+.card-img-3 {
+    position: absolute;
+    font-size: 66px;
+    top: 100px;
+    left: 150px;
+    transform: rotate(30deg);
+}
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.rounded-lg {
+    border-radius: 30px;
+}
+
+section {
+    top: -5px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: fade-in;
+}
+
+section .rows {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: -1px 0;
+    white-space: nowrap;
+    font-size: 64px;
+}
+
+section .rows div i {
+    color: white;
+    transition: 1s;
+    padding: 0 3px;
+    user-select: none;
+    cursor: default;
+}
+
+section .rows div i:hover {
+    color: black;
+    text-shadow: 0 0 120px black;
+    transition: 0s;
+}
+
+section .rows div {
+    animation: animate1 80s linear infinite;
+    animation-delay: -80s;
+}
+
+section .rows div:nth-child(2) {
+    animation: animate2 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+section .rows:nth-child(even) div {
+    animation: animate3 80s linear infinite;
+    animation-delay: -80s;
+}
+
+section .rows:nth-child(even) div:nth-child(2) {
+    animation: animate4 80s linear infinite;
+    animation-delay: -40s;
+}
+
+.btn {
+    z-index: 1 !important;
+    animation: fade-in 1.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes spin-right {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-left {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+nav {
+    position: absolute;
+    z-index: 1;
+}
+
+.logo-nav {
+    font-size: 30px;
+}
+
+.logo-title {
+    font-size: 20px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: black !important;
+}
+
+.active {
+    color: black !important;
+}
+
+.item {
+    display: contents;
+}
+
+.welcome {
+    display: flex;
+    margin-top: 250px;
+    justify-content: start;
+    align-items: center;
+    padding-left: 120px;
+    float: left;
+    width: 60%;
+    animation: fade-in 1.5s;
+    position: absolute;
+    z-index: 1;
+}
+
+.right-items {
+    display: flex;
+    height: 600px;
+    justify-content: end;
+    font-size: 200px;
+    float: right;
+    width: 40%;
+    animation: fade-in 1.5s;
+    color: black;
+}
+
+.right-image-1 {
+    position: absolute;
+    top: 150px;
+    right: 400px;
+    -webkit-animation: spin-left 25s linear infinite;
+    -moz-animation: spin-left 25s linear infinite;
+    -ms-animation: spin-left 25s linear infinite;
+    -o-animation: spin-left 25s linear infinite;
+    animation: spin-left 25s linear infinite;
+}
+
+.right-image-2 {
+    position: absolute;
+    top: 450px;
+    right: 540px;
+    -webkit-animation: spin-right 25s linear infinite;
+    -moz-animation: spin-right 25s linear infinite;
+    -ms-animation: spin-right 25s linear infinite;
+    -o-animation: spin-right 25s linear infinite;
+    animation: spin-right 25s linear infinite;
+}
+
+.right-image-3 {
+    position: absolute;
+    top: 140px;
+    right: 80px;
+    -webkit-animation: spin-right 25s linear infinite;
+    -moz-animation: spin-right 25s linear infinite;
+    -ms-animation: spin-right 25s linear infinite;
+    -o-animation: spin-right 25s linear infinite;
+    animation: spin-right 25s linear infinite;
+}
+
+.right-image-4 {
+    position: absolute;
+    top: 450px;
+    right: 100px;
+    -webkit-animation: spin-left 25s linear infinite;
+    -moz-animation: spin-left 25s linear infinite;
+    -ms-animation: spin-left 25s linear infinite;
+    -o-animation: spin-left 25s linear infinite;
+    animation: spin-left 25s linear infinite;
+}
+
+.line-break {
+    width: 100%;
+}
+
+@media screen and (max-width: 1320px) {
+    .right-items {
+        display: flex;
+        height: 600px;
+        justify-content: end;
+        font-size: 150px;
+        float: right;
+        width: 40%;
+        animation: fade-in 1.5s;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .right-image-1 {
+        position: absolute;
+        top: 150px;
+        right: 250px;
+        -webkit-animation: spin-left 25s linear infinite;
+        -moz-animation: spin-left 25s linear infinite;
+        -ms-animation: spin-left 25s linear infinite;
+        -o-animation: spin-left 25s linear infinite;
+        animation: spin-left 25s linear infinite;
+    }
+
+    .right-image-2 {
+        position: absolute;
+        top: 450px;
+        right: 350px;
+        -webkit-animation: spin-right 25s linear infinite;
+        -moz-animation: spin-right 25s linear infinite;
+        -ms-animation: spin-right 25s linear infinite;
+        -o-animation: spin-right 25s linear infinite;
+        animation: spin-right 25s linear infinite;
+    }
+
+    .right-image-3 {
+        position: absolute;
+        top: 140px;
+        right: 8px;
+        -webkit-animation: spin-right 25s linear infinite;
+        -moz-animation: spin-right 25s linear infinite;
+        -ms-animation: spin-right 25s linear infinite;
+        -o-animation: spin-right 25s linear infinite;
+        animation: spin-right 25s linear infinite;
+    }
+
+    .right-image-4 {
+        position: absolute;
+        top: 450px;
+        right: 10px;
+        -webkit-animation: spin-left 25s linear infinite;
+        -moz-animation: spin-left 25s linear infinite;
+        -ms-animation: spin-left 25s linear infinite;
+        -o-animation: spin-left 25s linear infinite;
+        animation: spin-left 25s linear infinite;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .welcome {
+        display: flex;
+        margin-top: 250px;
+        justify-content: start;
+        align-items: center;
+        padding-left: 70px;
+        float: left;
+        width: 50%;
+        animation: fade-in 1.5s;
+    }
+
+    .content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .right-items {
+        display: flex;
+        height: 600px;
+        justify-content: end;
+        font-size: 100px;
+        float: right;
+        width: 40%;
+        animation: fade-in 1.5s;
+        color: black;
+    }
+
+    .content {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .right-image-1 {
+        position: absolute;
+        top: 250px;
+        right: 200px;
+        -webkit-animation: spin-left 25s linear infinite;
+        -moz-animation: spin-left 25s linear infinite;
+        -ms-animation: spin-left 25s linear infinite;
+        -o-animation: spin-left 25s linear infinite;
+        animation: spin-left 25s linear infinite;
+    }
+
+    .right-image-2 {
+        position: absolute;
+        top: 450px;
+        right: 210px;
+        -webkit-animation: spin-right 25s linear infinite;
+        -moz-animation: spin-right 25s linear infinite;
+        -ms-animation: spin-right 25s linear infinite;
+        -o-animation: spin-right 25s linear infinite;
+        animation: spin-right 25s linear infinite;
+    }
+
+    .right-image-3 {
+        position: absolute;
+        top: 240px;
+        right: 8px;
+        -webkit-animation: spin-right 25s linear infinite;
+        -moz-animation: spin-right 25s linear infinite;
+        -ms-animation: spin-right 25s linear infinite;
+        -o-animation: spin-right 25s linear infinite;
+        animation: spin-right 25s linear infinite;
+    }
+
+    .right-image-4 {
+        position: absolute;
+        top: 450px;
+        right: 10px;
+        -webkit-animation: spin-left 25s linear infinite;
+        -moz-animation: spin-left 25s linear infinite;
+        -ms-animation: spin-left 25s linear infinite;
+        -o-animation: spin-left 25s linear infinite;
+        animation: spin-left 25s linear infinite;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .right-items {
+        display: flex;
+        height: 600px;
+        justify-content: end;
+        font-size: 50px;
+        float: right;
+        width: 40%;
+        animation: fade-in 1.5s;
+        color: black;
+    }
+
+    .right-image-1 {
+        position: absolute;
+        top: 300px;
+        right: 100px;
+        -webkit-animation: spin-left 25s linear infinite;
+        -moz-animation: spin-left 25s linear infinite;
+        -ms-animation: spin-left 25s linear infinite;
+        -o-animation: spin-left 25s linear infinite;
+        animation: spin-left 25s linear infinite;
+    }
+
+    .right-image-2 {
+        position: absolute;
+        top: 450px;
+        right: 110px;
+        -webkit-animation: spin-right 25s linear infinite;
+        -moz-animation: spin-right 25s linear infinite;
+        -ms-animation: spin-right 25s linear infinite;
+        -o-animation: spin-right 25s linear infinite;
+        animation: spin-right 25s linear infinite;
+    }
+
+    .right-image-3 {
+        position: absolute;
+        top: 240px;
+        right: 8px;
+        -webkit-animation: spin-right 25s linear infinite;
+        -moz-animation: spin-right 25s linear infinite;
+        -ms-animation: spin-right 25s linear infinite;
+        -o-animation: spin-right 25s linear infinite;
+        animation: spin-right 25s linear infinite;
+    }
+
+    .right-image-4 {
+        position: absolute;
+        top: 450px;
+        right: 10px;
+        -webkit-animation: spin-left 25s linear infinite;
+        -moz-animation: spin-left 25s linear infinite;
+        -ms-animation: spin-left 25s linear infinite;
+        -o-animation: spin-left 25s linear infinite;
+        animation: spin-left 25s linear infinite;
+    }
+
+    .card-img-1 {
+        position: absolute;
+        font-size: 60px;
+        top: 100px;
+        right: 30px;
+        transform: rotate(30deg);
+    }
+
+    .card-img-2 {
+        position: absolute;
+        font-size: 80px;
+        top: 300px;
+        left: 30px;
+    }
+
+    .card-img-3 {
+        position: absolute;
+        font-size: 66px;
+        top: 100px;
+        left: 50px;
+        transform: rotate(30deg);
+    }
+}
