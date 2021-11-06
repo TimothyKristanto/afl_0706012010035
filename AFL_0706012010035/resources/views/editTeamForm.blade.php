@@ -14,15 +14,15 @@
             <input type="hidden" name="_method" value="PATCH">
             <div class="form-group">
                 <label for="name"><h5>Team name:</h5></label>
-                <input type="text" name="name" class="form-control" id="name" value="{{ $team['name'] }}">
+                <input type="text" name="name" class="form-control" id="name" value="{{ $team['name'] }}" required>
             </div>
             <div class="form-group mt-4">
                 <label for="team_location"><h5>Location origin:</h5></label>
-                <input type="text" name="team_location_origin" class="form-control" id="team_location" value="{{ $team['team_location_origin'] }}">
+                <input type="text" name="team_location_origin" class="form-control" id="team_location" value="{{ $team['team_location_origin'] }}" required>
             </div>
             <div class="form-group mt-4">
                 <label for="head_coach"><h5>Head coach:</h5></label>
-                <input type="text" name="head_coach" class="form-control" id="head_coach" value="{{ $team['head_coach'] }}">
+                <input type="text" name="head_coach" class="form-control" id="head_coach" value="{{ $team['head_coach'] }}" required>
             </div>
             <br>
             <br>

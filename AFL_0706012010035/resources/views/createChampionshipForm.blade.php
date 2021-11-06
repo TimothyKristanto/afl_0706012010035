@@ -13,23 +13,23 @@
             @csrf
             <div class="form-group">
                 <label for="name"><h5>Championship name:</h5></label>
-                <input type="text" name="name" class="form-control" id="name">
+                <input type="text" name="name" class="form-control" id="name" required>
             </div>
             <div class="form-group mt-4">
                 <label for="year"><h5>Championship year:</h5></label>
-                <input type="text" name="year" class="form-control" id="year">
+                <input type="text" name="year" class="form-control" id="year" required>
             </div>
             <div class="form-group mt-4">
                 <label for="league"><h5>League:</h5></label>
-                <input type="text" name="league" class="form-control" id="league">
+                <input type="text" name="league" class="form-control" id="league" required>
             </div>
             <div class="form-group mt-4">
                 <label for="champ_mvp"><h5>Championship MVP:</h5></label>
-                <input type="text" name="championship_mvp" class="form-control" id="champ_mvp">
+                <input type="text" name="championship_mvp" class="form-control" id="champ_mvp" required>
             </div>
             <div class="form-group">
                 <label for="champ_team" class="mt-4"><h5>Champion Team:</h5></label>
-                <select name="champion_team" id="champ_team" class="rounded-lg w-100">
+                <select name="champion_team" id="champ_team" class="rounded-lg w-100" required>
                     <option value="" selected disabled hidden>Choose here...</option>
                     @foreach ($teams as $team)
                         <option value="{{ $team["id"] }}">{{ $team["name"] }}</option>

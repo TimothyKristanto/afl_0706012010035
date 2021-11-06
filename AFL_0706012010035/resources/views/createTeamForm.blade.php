@@ -13,15 +13,15 @@
             @csrf
             <div class="form-group">
                 <label for="name"><h5>Team name:</h5></label>
-                <input type="text" name="name" class="form-control" id="name">
+                <input type="text" name="name" class="form-control" id="name" required>
             </div>
             <div class="form-group mt-4">
                 <label for="team_location"><h5>Location origin:</h5></label>
-                <input type="text" name="team_location_origin" class="form-control" id="team_location">
+                <input type="text" name="team_location_origin" class="form-control" id="team_location" required>
             </div>
             <div class="form-group mt-4">
                 <label for="head_coach"><h5>Head coach:</h5></label>
-                <input type="text" name="head_coach" class="form-control" id="head_coach">
+                <input type="text" name="head_coach" class="form-control" id="head_coach" required>
             </div>
             <br>
             <br>
